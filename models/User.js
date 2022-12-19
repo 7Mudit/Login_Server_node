@@ -7,7 +7,8 @@ const UserSchema=new Schema({
     password:String,
     dateOfBirth:Date,
     phoneNumber:Number,
-    address:String
+    address:String,
+    verified:Boolean
 })
 
 const User=mongoose.model('User',UserSchema)
