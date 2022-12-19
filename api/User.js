@@ -14,7 +14,7 @@ router.post("/signup", (req, res) => {
   email = email.trim();
   password = password.trim();
   dateOfBirth = dateOfBirth.trim();
-  phoneNumber = phoneNumber.trim();
+  // phoneNumber = phoneNumber.trim();
   address = address.trim();
 
   if (
@@ -133,13 +133,13 @@ router.post("/signing", (req, res) => {
               //password match
               res.json({
                 status: "Success",
-                message: "Signin successfull",
+                message: "Signing successfull",
                 data: data,
               });
             } else {
               res.json({
                 status: "Failed",
-                message: "Invalid passsword entered",
+                message: "Invalid password entered",
               });
             }
           })
